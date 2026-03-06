@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anthony Sáenz | Contacto</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { sans: ['Montserrat','sans-serif'] }
+    }
+  }
+}
+</script>
+
+<style>
+body { overflow-x: hidden; background: black; }
+.icono { width: 50px; height: 50px; }
+a:hover { color: rgb(0,51,204); }
+.skill-card i {
+    font-size: 1.2rem;
+    margin-right: 8px;
+    color: #38bdf8;
+}
+</style>
+
+</head>
+
+<body class="bg-black text-white min-h-screen flex flex-col font-sans">
+
+<!-- NAV -->
+<nav class="bg-black px-6 py-4 border-b-4 border-white">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <img src="img/baseball-logo-for-online-scaled-300x141.webp" class="w-24" alt="Logo">
+    <ul class="hidden md:flex space-x-10 font-bold uppercase tracking-[0.2em]">
+      <li><a href="index.html" class="hover:text-[rgb(0,51,204)] transition">HOME</a></li>
+      <li><a href="AboutUs.html" class="hover:text-[rgb(0,51,204)] transition">ABOUT</a></li>
+      <li><a href="Contacto.html" class="hover:text-[rgb(0,51,204)] transition">CONTACT</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="flex flex-col items-center flex-grow px-6 text-center mt-16 mb-20">
+
+  <h1 class="text-5xl md:text-6xl font-black uppercase mb-6">
+    Contáctame
+  </h1>
+
+  <p class="text-gray-300 text-lg mb-6">
+    Si tienes alguna propuesta, una pregunta técnica o simplemente quieres ponerte en contacto conmigo,
+    escríbeme a este correo. Estaré encantado de responderte pronto.
+  </p>
+
+  <div class="flex flex-col md:flex-row gap-6 md:gap-12 items-center justify-center mb-10">
+    <a href="mailto:asm0103@alu.medac.es" class="flex flex-col items-center">
+      <i class="fa-solid fa-envelope text-4xl mb-2"></i>
+      <span>Email</span>
+    </a>
+  </div>
+
+</main>
+
+<div class="w-full bg-white h-[2px]"></div>
+
+<!-- FOOTER -->
+<footer class="bg-black py-16 flex flex-col items-center">
+  <img src="img/baseball-logo-for-online-scaled-300x141.webp" class="w-64 mb-8 hover:scale-105 transition" alt="Logo">
+  <p class="text-gray-400 text-sm mb-4">© 2026 Anthony Sáenz</p>
+  <p class="text-gray-500 text-xs uppercase tracking-[0.3em]">All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
