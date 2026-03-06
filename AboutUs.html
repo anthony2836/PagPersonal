@@ -35,19 +35,35 @@ body {
 
 <body class="bg-black text-white min-h-screen flex flex-col font-sans">
 
-<!-- NAV -->
-
+  <!-- NAV -->
 <nav class="bg-black px-6 py-4 border-b-4 border-white">
   <div class="max-w-7xl mx-auto flex items-center justify-between">
-    <img src="img/baseball-logo-for-online-scaled-300x141.webp" class="w-24">
-    <ul class="hidden md:flex space-x-10 font-bold uppercase tracking-[0.2em]">
-      <li><a href="index.html" class="hover:text-[rgb(0,51,204)] transition">HOME</a></li>
-      <li><a href="AboutUs.html" class="hover:text-[rgb(0,51,204)] transition">ABOUT</a></li>
-      <li><a href="Contacto.html" class="hover:text-[rgb(0,51,204)] transition">CONTACT</a></li>
+    
+     <a href="index.html">
+      <img src="img/baseball-logo-for-online-scaled-300x141.webp" class="w-24">
+    </a>
+
+     <button id="menu-btn" class="md:hidden text-white text-2xl focus:outline-none">
+      <i class="fas fa-bars"></i>
+    </button>
+
+     <ul id="menu" class="hidden md:flex space-x-10 font-bold uppercase tracking-[0.2em] flex-col md:flex-row md:flex">
+      <li><a href="index.html" class="hover:text-[rgb(0,51,204)] transition block py-2 md:py-0">HOME</a></li>
+      <li><a href="AboutUs.html" class="hover:text-[rgb(0,51,204)] transition block py-2 md:py-0">ABOUT ME</a></li>
+      <li><a href="Contacto.html" class="hover:text-[rgb(0,51,204)] transition block py-2 md:py-0">CONTACTO</a></li>
     </ul>
+
   </div>
 </nav>
 
+ <script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
 
 <main class="flex flex-col items-center flex-grow px-6">
 

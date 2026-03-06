@@ -2,160 +2,150 @@
 <html lang="es">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Anthony Sáenz | Portfolio</title>
+  <title>Anthony Sáenz | Portfolio</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<script src="https://cdn.tailwindcss.com"></script>
-
-<script>
-tailwind.config = {
-theme: {
-extend: {
-fontFamily: {
-sans: ['Montserrat','sans-serif']
-}
-}
-}
-}
-</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
 
 </head>
 
 <body class="bg-black text-white min-h-screen flex flex-col font-sans">
 
-<!-- NAV -->
+  <!-- NAV -->
 <nav class="bg-black px-6 py-4 border-b-4 border-white">
   <div class="max-w-7xl mx-auto flex items-center justify-between">
-    <img src="img/baseball-logo-for-online-scaled-300x141.webp" class="w-24">
-    <ul class="hidden md:flex space-x-10 font-bold uppercase tracking-[0.2em]">
-      <li><a href="index.html" class="hover:text-[rgb(0,51,204)] transition">HOME</a></li>
-      <li><a href="AboutUs.html" class="hover:text-[rgb(0,51,204)] transition">ABOUT</a></li>
-      <li><a href="Contacto.html" class="hover:text-[rgb(0,51,204)] transition">CONTACT</a></li>
+    
+     <a href="index.html">
+      <img src="img/baseball-logo-for-online-scaled-300x141.webp" class="w-24">
+    </a>
+
+     <button id="menu-btn" class="md:hidden text-white text-2xl focus:outline-none">
+      <i class="fas fa-bars"></i>
+    </button>
+
+     <ul id="menu" class="hidden md:flex space-x-10 font-bold uppercase tracking-[0.2em] flex-col md:flex-row md:flex">
+      <li><a href="index.html" class="hover:text-[rgb(0,51,204)] transition block py-2 md:py-0">HOME</a></li>
+      <li><a href="AboutUs.html" class="hover:text-[rgb(0,51,204)] transition block py-2 md:py-0">ABOUT ME</a></li>
+      <li><a href="Contacto.html" class="hover:text-[rgb(0,51,204)] transition block py-2 md:py-0">CONTACTO</a></li>
     </ul>
+
   </div>
 </nav>
 
+ <script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
 
-<main class="flex flex-col items-center flex-grow">
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
 
+  <main class="flex flex-col items-center flex-grow">
 
-<section class="max-w-7xl w-full px-6 mt-20 mb-10">
+    <!-- SECCIÓN INTRO -->
+    <section class="max-w-7xl w-full px-6 mt-20 mb-10">
+      <h1 class="text-5xl md:text-5xl font-black uppercase">Anthony <span class="bg-[rgb(0,51,204)] px-2 italic">Sáenz</span></h1>
+    </section>
 
-  <h1 class="text-5xl md:text-5xl font-black uppercase">Anthony <span class="bg-[rgb(0,51,204)] px-2 italic">Sáenz</span></h1>
+    <section class="max-w-7xl w-full px-6 mb-20">
+      <p class="max-w-3xl text-gray-300 text-lg leading-relaxed">
+        Soy un desarrollador recién graduado en DAW con muchísimas ganas de dar el salto al mundo laboral. 
+        Mi objetivo ahora mismo es aprender de proyectos reales y crecer profesionalmente día a día, aportando 
+        todo lo que sé y absorbiendo nuevos conocimientos.
+      </p>
+    </section>
 
-</section>
+    <!-- PROYECTOS -->
+    <section class="max-w-7xl w-full px-6 mb-20">
+      <h2 class="text-4xl font-black uppercase mb-10">
+        Proyectos <span class="bg-[rgb(0,51,204)] px-2 italic">Destacados</span>
+      </h2>
 
+      <div class="grid md:grid-cols-3 gap-6">
 
-<section class="max-w-7xl w-full px-6 mb-20">
+        <div class="border border-white p-6 hover:bg-[rgb(0,51,204)] hover:scale-105 transition duration-300 flex flex-col justify-between">
+          <div>
+            <h3 class="font-bold text-xl mb-2">Tres en Raya</h3>
+            <p class="text-gray-300 text-sm mb-2">
+              Un proyecto en pareja donde aplicamos lógica pura de programación. Creamos un sistema que detecta las jugadas 
+              del usuario y responde de forma estratégica para evitar la derrota. Nos centramos en la gestión del tablero y 
+              en crear una 'IA' que analice las posiciones ganadoras, siendo mi primer contacto serio con algoritmos de decisión en Java.
+            </p>
+            <p class="text-gray-400 text-xs">- Tecnologías: Java.</p>
+            <p class="text-gray-400 text-xs">- Objetivo: Aprender lógica de juego y organización del código.</p>
+          </div>
+          <a href="https://github.com/anthony2836" class="mt-4 inline-block border border-white px-4 py-2 text-sm font-bold uppercase hover:bg-white hover:text-black transition">
+            Ver proyecto
+          </a>
+        </div>
 
-  <p class="max-w-3xl text-gray-300 text-lg leading-relaxed">
-    
-  Soy un desarrollador recién graduado en DAW con muchísimas ganas de dar el salto al mundo laboral. 
-  Mi objetivo ahora mismo es aprender de proyectos reales y crecer profesionalmente día a día, aportando 
-  todo lo que sé y absorbiendo nuevos conocimientos.
+        <div class="border border-white p-6 hover:bg-[rgb(0,51,204)] hover:scale-105 transition duration-300 flex flex-col justify-between">
+          <div>
+            <h3 class="font-bold text-xl mb-2">Sistema de fichajes</h3>
+            <p class="text-gray-300 text-sm mb-1">
+              Desarrollé en pareja un sistema completo para gestionar una liga deportiva. El programa permite crear equipos desde cero,
+              fichar jugadores y llevar un control detallado de su estado (activos o lesionados). También incluimos la gestión de presidentes 
+              para que el sistema refleje la estructura real de un club. Fue un reto excelente para trabajar con la lógica de estados y la 
+              organización de datos en Java.
+            </p>
+            <p class="text-gray-400 text-xs">- Tecnologías: Java.</p>
+            <p class="text-gray-400 text-xs">- Objetivo: Dominar la estructura de clases y objetos (POO) para resolver problemas.</p>
+          </div>
+          <a href="https://github.com/anthony2836/Entrega-5---Gestionando-fichajes" class="mt-4 inline-block border border-white px-4 py-2 text-sm font-bold uppercase hover:bg-white hover:text-black transition">
+            Ver proyecto
+          </a>
+        </div>
 
-  </p>
+        <div class="border border-white p-6 hover:bg-[rgb(0,51,204)] hover:scale-105 transition duration-300 flex flex-col justify-between">
+          <div>
+            <h3 class="font-bold text-xl mb-2">Netflix</h3>
+            <p class="text-gray-300 text-sm mb-2">
+              He recreado la página principal de Netflix cuidando cada detalle visual, desde la película destacada hasta 
+              el famoso 'Top 10' y las listas por categorías. El reto principal fue lograr una estructura idéntica a la plataforma 
+              original, utilizando Flexbox y Grid para que los carruseles de películas sean fluidos y totalmente responsivos.
+            </p>
+            <p class="text-gray-400 text-xs">- Tecnologías: HTML5, CSS (Flexbox/Grid), JavaScript.</p>
+            <p class="text-gray-400 text-xs">- Objetivo: Crear un diseño moderno y mejorar mis habilidades de maquetación.</p>
+          </div>
+          <a href="https://github.com/anthony2836/P9.-Netflix" class="mt-4 inline-block border border-white px-4 py-2 text-sm font-bold uppercase hover:bg-white hover:text-black transition">
+            Ver proyecto
+          </a>
+        </div>
 
-</section>
-
-<!-- PROYECTOS -->
-
-<section class="max-w-7xl w-full px-6 mb-20">
-
-  <h2 class="text-4xl font-black uppercase mb-10">
-    Proyectos <span class="bg-[rgb(0,51,204)] px-2 italic">Destacados</span>
-  </h2>
-
-  <div class="grid md:grid-cols-3 gap-6">
-
-    <div class="border border-white p-6 hover:bg-[rgb(0,51,204)] hover:scale-105 transition duration-300 flex flex-col justify-between">
-
-      <div>
-        <h3 class="font-bold text-xl mb-2">Tres en Raya</h3>
-
-        <p class="text-gray-300 text-sm mb-2">
-        Un proyecto en pareja donde aplicamos lógica pura de programación. Creamos un sistema que detecta las jugadas 
-        del usuario y responde de forma estratégica para evitar la derrota. Nos centramos en la gestión del tablero y 
-        en crear una 'IA' que analice las posiciones ganadoras, siendo mi primer contacto serio con algoritmos de decisión en Java.     
-        </p>
-
-        <p class="text-gray-400 text-xs">- Tecnologías: Java.</p>
-        <p class="text-gray-400 text-xs">- Objetivo: Aprender lógica de juego y organización del código.</p>
       </div>
+    </section>
 
-      <a href="https://github.com/anthony2836" class="mt-4 inline-block border border-white px-4 py-2 text-sm font-bold uppercase hover:bg-white hover:text-black transition">
-        Ver proyecto
-      </a>
+  </main>
 
-    </div>
+  <div class="w-full bg-white h-[2px]"></div>
 
-    <div class="border border-white p-6 hover:bg-[rgb(0,51,204)] hover:scale-105 transition duration-300 flex flex-col justify-between">
-
-      <div>
-        <h3 class="font-bold text-xl mb-2">Sistema de fichajes</h3>
-
-        <p class="text-gray-300 text-sm mb-1">
-        Desarrollé en pareja un sistema completo para gestionar una liga deportiva. El programa permite crear equipos desde cero,
-        fichar jugadores y llevar un control detallado de su estado (activos o lesionados). También incluimos la gestión de presidentes 
-        para que el sistema refleje la estructura real de un club. Fue un reto excelente para trabajar con la lógica de estados y la 
-        organización de datos en Java.      
-        </p>
-
-        <p class="text-gray-400 text-xs">- Tecnologías: Java.</p>
-        <p class="text-gray-400 text-xs">- Objetivo: Dominar la estructura de clases y objetos (POO) para resolver problemas.</p>
-      </div>
-
-      <a href="https://github.com/anthony2836/Entrega-5---Gestionando-fichajes" class="mt-4 inline-block border border-white px-4 py-2 text-sm font-bold uppercase hover:bg-white hover:text-black transition">
-        Ver proyecto
-      </a>
-
-    </div>
-
-    <div class="border border-white p-6 hover:bg-[rgb(0,51,204)] hover:scale-105 transition duration-300 flex flex-col justify-between">
-
-      <div>
-        <h3 class="font-bold text-xl mb-2">Netflix</h3>
-
-        <p class="text-gray-300 text-sm mb-2">
-        He recreado la página principal de Netflix cuidando cada detalle visual, desde la película destacada hasta 
-        el famoso 'Top 10' y las listas por categorías. El reto principal fue lograr una estructura idéntica a la plataforma 
-        original, utilizando Flexbox y Grid para que los carruseles de películas sean fluidos y totalmente responsivos.
-        </p>
-
-        <p class="text-gray-400 text-xs">- Tecnologías: HTML5, CSS (Flexbox/Grid), JavaScript.</p>
-        <p class="text-gray-400 text-xs">- Objetivo: Crear un diseño moderno y mejorar mis habilidades de maquetación.</p>
-      </div>
-
-      <a href="https://github.com/anthony2836/P9.-Netflix" class="mt-4 inline-block border border-white px-4 py-2 text-sm font-bold uppercase hover:bg-white hover:text-black transition">
-        Ver proyecto
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-</main>
-
-<div class="w-full bg-white h-[2px]"></div>
-
-<!-- FOOTER -->
-
-<footer class="bg-black py-16 flex flex-col items-center">
-  <img src="img/baseball-logo-for-online-scaled-300x141.webp" class="w-64 mb-8 hover:scale-105 transition">
-  <p class="text-gray-400 text-sm mb-4">© 2026 Anthony Sáenz</p>
-  <p class="text-gray-500 text-xs uppercase tracking-[0.3em]">All Rights Reserved</p>
-</footer>
+  <!-- FOOTER -->
+  <footer class="bg-black py-16 flex flex-col items-center">
+    <img src="img/baseball-logo-for-online-scaled-300x141.webp" class="w-64 mb-8 hover:scale-105 transition">
+    <p class="text-gray-400 text-sm mb-4">© 2026 Anthony Sáenz</p>
+    <p class="text-gray-500 text-xs uppercase tracking-[0.3em]">All Rights Reserved</p>
+  </footer>
 
 </body>
 </html>
