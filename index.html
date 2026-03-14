@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Anthony Sáenz | HOME </title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="dist/output.css">
+
+</head>
+
+<body class="bg-black text-white min-h-screen flex flex-col font-sans">
+
+  <!-- NAV -->
+  <nav class="bg-black px-6 py-4 border-b-4 border-white">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="shrink-0">
+        <img src="assets/img/logo.png" class="w-28 hover:opacity-80 transition">
+      </a>
+
+      <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul id="menu" class="hidden md:flex space-x-12 font-bold uppercase tracking-[0.2em] items-center">
+        <li><a href="index.html" class="hover:text-[rgb(0,51,204)] transition relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[rgb(0,51,204)] after:left-0 after:-bottom-1 hover:after:w-full after:transition-all">HOME</a></li>
+        <li><a href="contacto.html" class="hover:text-[rgb(0,51,204)] transition relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[rgb(0,51,204)] after:left-0 after:-bottom-1 hover:after:w-full after:transition-all">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="flex flex-col items-center flex-grow">
+
+    <!-- PRESENTACIÓN -->
+    <section class="max-w-7xl w-full px-6 py-20 md:py-32">
+      <div class="flex flex-col-reverse md:flex-row items-center justify-center gap-12 md:gap-24">
+        
+        <div class="flex-1 text-center md:text-left max-w-2xl">
+          <h1 class="text-5xl md:text-8xl font-black uppercase mb-8 leading-tight">
+            Anthony <br class="hidden md:block">
+            <span class="bg-[rgb(0,51,204)] px-4 italic inline-block transform -skew-x-12">Sáenz</span>
+          </h1>
+          <p class="text-gray-400 text-lg md:text-xl leading-relaxed">
+            Tecnico de DAW (Desarrollo de Aplicaciones Web). Con muchas ganas de apotar todas mis herramientas y soluciones a cada 
+            proyecto.
+        </div>
+
+     <div class="shrink-0 relative flex justify-center items-center">
+   <div class="absolute -inset-4 bg-[rgb(0,51,204)] opacity-10 blur-2xl rounded-full"></div>
+
+  <img src="assets/img/WhatsApp Image 2026-03-13 at 15.37.49.jpeg" 
+       alt="Anthony Sáenz"
+       class="relative w-64 h-64 md:w-80 md:h-80
+              border-8 border-white
+              object-cover object-center
+              grayscale hover:grayscale-0 hover:scale-105
+              transition-all duration-700
+              cursor-pointer shadow-2xl">
+</div>
+      </div>
+    </section>
+
+    <!-- FORMACION ACADEMICA -->
+    <section class="w-full mb-24 max-w-7xl px-6">
+      <div class="grid md:grid-cols-2 gap-16">
+        <div>
+          <h2 class="text-4xl font-black uppercase mb-8 border-l-8 border-[rgb(0,51,204)] pl-6">Formación <br><span class="text-[rgb(0,51,204)] italic">Académica</span></h2>
+          <div class="space-y-6">
+            <div class="border-b border-white/10 pb-4">
+              <h3 class="text-xl font-bold">Grado Superior DAW</h3>
+              <p class="text-gray-400">Desarrollo de Aplicaciones Web</p>
+            </div>
+            <div class="border-b border-white/10 pb-4">
+              <h3 class="text-xl font-bold">Grado Medio SMR</h3>
+              <p class="text-gray-400">Sistemas Microinformáticos y Redes</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-4xl font-black uppercase mb-8 border-l-8 border-white pl-6">Stack <br><span class="italic text-gray-400">Tecnológico</span></h2>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="border border-white/20 p-4">
+              <i class="fab fa-java text-[rgb(0,51,204)] mb-2 text-xl"></i>
+              <h3 class="font-bold uppercase text-sm">Java</h3>
+            </div>
+            <div class="border border-white/20 p-4">
+              <i class="fab fa-html5 text-[rgb(0,51,204)] mb-2 text-xl"></i>
+              <h3 class="font-bold uppercase text-sm">HTML/CSS</h3>
+            </div>
+            <div class="border border-white/20 p-4">
+              <i class="fab fa-js text-[rgb(0,51,204)] mb-2 text-xl"></i>
+              <h3 class="font-bold uppercase text-sm">JavaScript</h3>
+            </div>
+            <div class="border border-white/20 p-4">
+              <i class="fab fa-github text-[rgb(0,51,204)] mb-2 text-xl"></i>
+              <h3 class="font-bold uppercase text-sm">Git/GitHub</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS DESTACADOS -->
+    <section class="max-w-7xl w-full px-6 pb-32">
+      <div class="flex items-end justify-between mb-16 border-l-8 border-[rgb(0,51,204)] pl-6">
+        <h2 class="text-4xl md:text-6xl font-black uppercase leading-none">
+          Proyectos <br> <span class="text-[rgb(0,51,204)]">Destacados</span>
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="proyecto-card border-2 border-white/20 p-8 hover:border-white transition-all duration-500 flex flex-col cursor-pointer bg-zinc-900/50 backdrop-blur-sm group h-fit">
+          <div class="flex justify-between items-center">
+            <h3 class="font-bold text-xl uppercase transition-colors">Sistema de fichajes</h3>
+            <div class="w-8 h-8 flex items-center justify-center border border-white/20 rounded-full transition-all">
+              <i class="fas fa-plus text-xs icon-js transition-transform duration-500"></i>
+            </div>
+          </div>
+          
+          <div class="content-js max-h-0 opacity-0 overflow-hidden">
+            <div class="pt-8 space-y-4">
+              <p class="text-gray-400 text-sm leading-relaxed">
+                Desarrollé en pareja un sistema completo para gestionar una liga deportiva. El programa permite crear equipos desde cero, fichar jugadores y llevar un control detallado de su estado (activos o lesionados). También incluimos la gestión de presidentes para que el sistema refleje la estructura real de un club. Fue un reto excelente para trabajar con la lógica de estados y la organización de datos en Java.
+              </p>
+              <p class="text-gray-400 text-xs">- Tecnologías: Java.</p>
+              <p class="text-gray-400 text-xs">- Objetivo: Dominar la estructura de clases y objetos (POO) para resolver problemas.</p>
+              <a href="https://github.com/anthony2836/Entrega-5---Gestionando-fichajes" class="block w-full bg-white text-black py-3 text-center font-black uppercase text-xs hover:bg-[rgb(0,51,204)] hover:text-white transition-all">
+                Ver Más
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proyecto-card border-2 border-white/20 p-8 hover:border-white transition-all duration-500 flex flex-col cursor-pointer bg-zinc-900/50 backdrop-blur-sm group h-fit">
+          <div class="flex justify-between items-center">
+            <h3 class="font-bold text-xl uppercase transition-colors">Netflix</h3>
+            <div class="w-8 h-8 flex items-center justify-center border border-white/20 rounded-full transition-all">
+              <i class="fas fa-plus text-xs icon-js transition-transform duration-500"></i>
+            </div>
+          </div>
+          
+          <div class="content-js max-h-0 opacity-0 overflow-hidden">
+            <div class="pt-8 space-y-4">
+              <p class="text-gray-400 text-sm leading-relaxed">
+                Creé una réplica visual de alta fidelidad de la plataforma Netflix. Utilicé intensivamente Flexbox y Grid para lograr un diseño responsivo que imita perfectamente la experiencia de usuario de Netflix. Incluye secciones de películas, navegación y efectos visuales para una experiencia inmersiva.
+              </p>
+              <p class="text-gray-400 text-xs">- Tecnologías: HTML, CSS, JavaScript.</p>
+              <p class="text-gray-400 text-xs">- Objetivo: Dominar el diseño responsivo y la maquetación avanzada de interfaces de usuario.</p>
+              <a href="https://anthony2836.github.io/NETFLIX/" class="block w-full bg-white text-black py-3 text-center font-black uppercase text-xs hover:bg-[rgb(0,51,204)] hover:text-white transition-all">
+                Ver Más
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proyecto-card border-2 border-white/20 p-8 hover:border-white transition-all duration-500 flex flex-col cursor-pointer bg-zinc-900/50 backdrop-blur-sm group h-fit">
+          <div class="flex justify-between items-center">
+            <h3 class="font-bold text-xl uppercase transition-colors">PokeAPI</h3>
+            <div class="w-8 h-8 flex items-center justify-center border border-white/20 rounded-full transition-all">
+              <i class="fas fa-plus text-xs icon-js transition-transform duration-500"></i>
+            </div>
+          </div>
+          
+          <div class="content-js max-h-0 opacity-0 overflow-hidden">
+            <div class="pt-8 space-y-4">
+              <p class="text-gray-400 text-sm leading-relaxed">
+                Formé qeuipo y desarrollamos una aplicación  web que consume la PokeAPI para mostrar información detallada de Pokémon. Permite buscar Pokémon por nombre o ID, mostrando estadísticas, tipos y evoluciones. Fue mi primer proyecto trabajando con APIs externas, aprendiendo a manejar promesas y datos JSON.
+              </p>
+              <p class="text-gray-400 text-xs">- Tecnologías: JavaScript, HTML, CSS.</p>
+              <p class="text-gray-400 text-xs">- Objetivo: Aprender a consumir y manipular datos de APIs REST.</p>
+              <a href="https://anthony2836.github.io/POKEAPI/" class="block w-full bg-white text-black py-3 text-center font-black uppercase text-xs hover:bg-[rgb(0,51,204)] hover:text-white transition-all">
+                Ver Más
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proyecto-card border-2 border-white/20 p-8 hover:border-white transition-all duration-500 flex flex-col cursor-pointer bg-zinc-900/50 backdrop-blur-sm group h-fit">
+          <div class="flex justify-between items-center">
+            <h3 class="font-bold text-xl uppercase transition-colors">Muy Interesante</h3>
+            <div class="w-8 h-8 flex items-center justify-center border border-white/20 rounded-full transition-all">
+              <i class="fas fa-plus text-xs icon-js transition-transform duration-500"></i>
+            </div>
+          </div>
+          
+          <div class="content-js max-h-0 opacity-0 overflow-hidden">
+            <div class="pt-8 space-y-4">
+              <p class="text-gray-400 text-sm leading-relaxed">
+                Creé una réplica completa de la revista Muy Interesante, una publicación científica española. El proyecto incluye secciones de artículos, navegación responsive y diseño moderno. Me enfoqué en la maquetación precisa y la adaptabilidad a diferentes dispositivos para lograr una experiencia de lectura fluida.
+              </p>
+              <p class="text-gray-400 text-xs">- Tecnologías: HTML, CSS, JavaScript.</p>
+              <p class="text-gray-400 text-xs">- Objetivo: Practicar la maquetación web avanzada y el diseño responsivo.</p>
+              <a href="https://anthony2836.github.io/MUY-INTERESANTE/" class="block w-full bg-white text-black py-3 text-center font-black uppercase text-xs hover:bg-[rgb(0,51,204)] hover:text-white transition-all">
+                Ver Más
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proyecto-card border-2 border-white/20 p-8 hover:border-white transition-all duration-500 flex flex-col cursor-pointer bg-zinc-900/50 backdrop-blur-sm group h-fit">
+          <div class="flex justify-between items-center">
+            <h3 class="font-bold text-xl uppercase transition-colors">Calculadora</h3>
+            <div class="w-8 h-8 flex items-center justify-center border border-white/20 rounded-full transition-all">
+              <i class="fas fa-plus text-xs icon-js transition-transform duration-500"></i>
+            </div>
+          </div>
+          
+          <div class="content-js max-h-0 opacity-0 overflow-hidden">
+            <div class="pt-8 space-y-4">
+              <p class="text-gray-400 text-sm leading-relaxed">
+                Desarrollé una calculadora web completamente funcional con operaciones básicas (suma, resta, multiplicación, división) y avanzadas. Incluye una interfaz intuitiva y manejo de errores. Este proyecto me permitió practicar la lógica de programación y la manipulación del DOM en tiempo real.
+              </p>
+              <p class="text-gray-400 text-xs">- Tecnologías: JavaScript, HTML, CSS.</p>
+              <p class="text-gray-400 text-xs">- Objetivo: Dominar la lógica de programación y la manipulación del DOM.</p>
+              <a href="https://anthony2836.github.io/CALCULADORA/" class="block w-full bg-white text-black py-3 text-center font-black uppercase text-xs hover:bg-[rgb(0,51,204)] hover:text-white transition-all">
+                Ver Más
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proyecto-card border-2 border-white/20 p-8 hover:border-white transition-all duration-500 flex flex-col cursor-pointer bg-zinc-900/50 backdrop-blur-sm group h-fit">
+          <div class="flex justify-between items-center">
+            <h3 class="font-bold text-xl uppercase transition-colors">Backoffice</h3>
+            <div class="w-8 h-8 flex items-center justify-center border border-white/20 rounded-full transition-all">
+              <i class="fas fa-plus text-xs icon-js transition-transform duration-500"></i>
+            </div>
+          </div>
+          
+          <div class="content-js max-h-0 opacity-0 overflow-hidden">
+            <div class="pt-8 space-y-4">
+              <p class="text-gray-400 text-sm leading-relaxed">
+                Creé un panel de administración (backoffice) para gestionar alumnos y cursos. Permite crear, editar y eliminar 
+                registros de estudiantes y asignaturas, con una interfaz intuitiva para administradores. Incluye validaciones y 
+                organización de datos para una gestión eficiente.
+              </p>
+              <p class="text-gray-400 text-xs">- Tecnologías: JavaScript, HTML, CSS.</p>
+              <p class="text-gray-400 text-xs">- Objetivo: Desarrollar interfaces de administración y gestión de datos.</p>
+              <a href="https://anthony2836.github.io/-Backofficee/" class="block w-full bg-white text-black py-3 text-center font-black uppercase text-xs hover:bg-[rgb(0,51,204)] hover:text-white transition-all">
+                Ver Más
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-black py-20 border-t border-white/10 flex flex-col items-center">
+    <a href="index.html">
+      <img src="assets/img/logo.png" class="w-48 mb-10 opacity-50 hover:opacity-100 transition duration-500">
+    </a>
+    <div class="text-center space-y-2">
+      <p class="text-gray-500 text-xs uppercase tracking-[0.5em]">© 2026 Anthony Sáenz</p>
+      <div class="flex justify-center gap-6 pt-4 text-gray-400">
+        <a href="https://github.com/anthony2836" target="_blank" rel="noopener noreferrer" class="hover:text-white transition"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Manejo del menú móvil: al hacer clic en el botón, muestra/oculta el menú de navegación
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    menuBtn.addEventListener('click', () => menu.classList.toggle('hidden'));
+
+    // Tarj de Proyectos: al hacer clic en una tarjeta, expande/colapsa su contenido
+    document.querySelectorAll('.proyecto-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const content = card.querySelector('.content-js'); // Elemento que contiene el contenido expandible
+        const icon = card.querySelector('.icon-js'); // Icono del botón de expansión
+        const isOpen = content.classList.contains('open'); // Verifica si la tarjeta ya está abierta
+
+        // Cierra todas las tarjetas abiertas previamente
+        document.querySelectorAll('.content-js').forEach(el => {
+          el.classList.remove('open');
+          el.style.maxHeight = '0px'; // Colapsa el contenido
+          el.style.opacity = '0'; // Hace invisible el contenido
+        });
+        document.querySelectorAll('.icon-js').forEach(i => i.style.transform = 'rotate(0deg)'); // Rota el icono a posición inicial
+        document.querySelectorAll('.proyecto-card').forEach(c => c.classList.remove('border-white')); // Quita el borde blanco
+
+        if (!isOpen) {
+          // Abre la tarjeta seleccionada
+          content.style.transition = 'max-height 1s ease-in-out, opacity 1s ease-in-out'; // Añade transición suave
+          content.classList.add('open'); // Marca como abierta
+          content.style.maxHeight = content.scrollHeight + "px"; // Expande al tamaño del contenido
+          content.style.opacity = '1'; // Hace visible el contenido
+          icon.style.transform = 'rotate(45deg)'; // Rota el icono para indicar expansión
+          card.classList.add('border-white'); // Añade borde blanco para resaltar
+        }
+      });
+    });
+  </script>
+</body>
+</html>
