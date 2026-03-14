@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anthony Sáenz | Contacto</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="/dist/output.css">
+
+</head>
+
+<body class="bg-black text-white min-h-screen flex flex-col font-sans">
+
+  <!-- NAV -->
+  <nav class="bg-black px-6 py-4 border-b-4 border-white">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="shrink-0">
+        <img src="assets/img/logo.png" class="w-28 hover:opacity-80 transition">
+      </a>
+
+      <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul id="menu" class="hidden md:flex space-x-12 font-bold uppercase tracking-[0.2em] items-center">
+        <li><a href="index.html" class="hover:text-[rgb(0,51,204)] transition relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[rgb(0,51,204)] after:left-0 after:-bottom-1 hover:after:w-full after:transition-all">HOME</a></li>
+        <li><a href="contacto.html" class="hover:text-[rgb(0,51,204)] transition relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[rgb(0,51,204)] after:left-0 after:-bottom-1 hover:after:w-full after:transition-all">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="flex-grow flex flex-col items-center max-w-7xl w-full mx-auto px-6 py-20">
+
+    <!-- SECCION PRINCIPAL CONTACTO -->
+    <section class="text-center">
+      <h1 class="text-6xl md:text-8xl font-black uppercase mb-8 leading-tight">
+        Contáctame
+      </h1>
+      <p class="text-gray-400 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-12">
+        Si tienes alguna propuesta, pregunta técnica o deseas ponerte en contacto, escríbeme. Estaré encantado de responderte.
+      </p>
+      <a href="mailto:asm0103@alu.medac.es" class="inline-block bg-white text-black px-8 py-4 font-black uppercase hover:bg-[rgb(0,51,204)] hover:text-white transition-all">
+        <i class="fas fa-envelope mr-2"></i> Envía un Email
+      </a>
+    </section>
+  </main>
+
+ <footer class="bg-black py-20 border-t border-white/10 flex flex-col items-center">
+
+    <!-- FOOTER -->
+    <a href="index.html">
+      <img src="assets/img/logo.png" class="w-48 mb-10 opacity-50 hover:opacity-100 transition duration-500">
+    </a>
+    <div class="text-center space-y-2">
+      <p class="text-gray-500 text-xs uppercase tracking-[0.5em]">© 2026 Anthony Sáenz</p>
+      <div class="flex justify-center gap-6 pt-4 text-gray-400">
+        <a href="https://github.com/anthony2836" target="_blank" rel="noopener noreferrer" class="hover:text-white transition"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    // Manejo del menú móvil: al hacer clic en el botón, muestra/oculta el menú de navegación
+    // Obtiene el botón del menú móvil por su ID 'menu-btn'
+    const menuBtn = document.getElementById('menu-btn');
+    // Obtiene el elemento del menú por su ID 'menu'
+    const menu = document.getElementById('menu');
+    // Agrega un event listener al botón para el evento 'click'
+    menuBtn.addEventListener('click', () => {
+        // Alterna la clase 'hidden' en el menú para mostrar/ocultar el menú de navegación
+        menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
